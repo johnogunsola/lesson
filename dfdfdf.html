@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+<title> News &mdash; Media </title>
+<meta charset="UTF-8">
+<style>
+canvas { border: 1px solid #000000; }
+
+@keyframes hue {
+  0% {
+    filter: hue-rotate(0deg) blur(5px);
+    transform: scale(0.5);
+  }
+  50% {
+    filter: hue-rotate(360deg) blur(0px);
+    transform: scale(0.6);
+  }
+  100% {
+    filter: hue-rotate(0deg) blur(5px);
+    transform: scale(0.5);
+  }
+}
+
+@keyframes bgColorChange {
+  0%   { background-color: #ff6b6b; } /* Red-ish */
+  50%  { background-color: #4ecdc4; } /* Teal */
+  100% { background-color: #ffe66d; }
+}
+
+/* optional: apply background animation to body */
+body { animation: bgColorChange 10s linear infinite; }
+</style>
+<script>
+alert("Hello World! Welcome to my website");
+</script>
+</head>
+<body style="background-color: grey;">
+<h1 style="text-align: center;"> News Media </h1>
+<ul>
+<li> <a href="http://www.bbc.com" target="_blank">BBC </a></li>
+<li> <a href="https://www.foxnews.com/?msockid=18a4a6b8180961c41c84b03019c76036" target="_blank">FOX-NEWS </a></li>
+<li> <a href="https://news.sky.com/" target="_blank">SKY </a></li>
+<li> <a href="https://edition.cnn.com/" target="_blank"> CNN</a></li>
+<li> <a href="https://www.netflix.com/gb" target="_blank"> NETFLIX</a></li>
+</ul>
+<p> Politics and Current Affairs </p>
+<p> &copy; Copyright : John Ogunsola, 2026 </p>
+<img src="images/Keir-Starmer-6688254.jpg" style="animation: hue 7s linear infinite"/>
+<br/><br/><br/>
+<hr/>
+<canvas width="200" height="200"></canvas>
+<marquee style="position: absolute; bottom: 50px"> I love Web development </marquee>
+</body>
+</html>

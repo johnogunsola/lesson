@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" src="./style.css"/>
+</head>
+
+<body class="bg-black">
+    <nav class="fixed top-0 w-full bg-[#121212] flex text-white justify-between p-6 text-[16px] border-b border-white/20">
+        <div>
+            <div class="flex">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" class="size-8">
+                    <circle cx="32" cy="32" r="32" fill="#b5ed80"/>
+                    <text x="29" y="45" text-anchor="middle" fill="#121413" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="700" letter-spacing="-4">s.</text>
+                  </svg>
+            </div>
+        </div>
+        <div class="flex gap-2">
+            <a href="#about"><span class="hover:text-[var(--theme)] transition duration-300 ease-in-out">About</span></a>
+            <a href="#contact"><span class="hover:text-[var(--theme)] transition duration-300">Contact</span></a>
+        </div>
+    </nav>
+    <main class="mt-18 p-16">
+        <button
+            class="bg-white text-black p-4 rounded-xl hover:scale-200 hover:translate-x-[200px] transition duration-700"
+        >Hover me</button>
+    </main>
+</body>
+
+</html>
